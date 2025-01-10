@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIS455_final</title>
+  <link rel="stylesheet" href="f2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+ <nav>
+  <ul class="sidebar">
+    <li onclick="hideSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+          <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+        </svg>
+      </a>
+    </li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#">Login</a></li>
+  </ul>
+  <ul class="top-nav">
+    <li><a href="index.html">The Hungry Spoon</a></li>
+    <li class="hideOnMobile"><a href="index.html">Products</a></li>
+    <li class="hideOnMobile"><a href="index.html">About</a></li>
+    <li class="hideOnMobile"><a href="index.html">FAQ</a></li>
+    <li class="hideOnMobile"><a href="index.html">Login</a></li>
+    <li class="menu-button" onclick="showSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+          <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+        </svg>
+      </a>
+    </li>
+  </ul>
+</nav>
+<div>
+  <h2 class="mainwords">Find The Top Meal Recipes.</h2>
+</div>
+
+  <!-- search-bar -->
+  <div class="search-bar-container">
+    <input id="searchBox" type="text" class="search-input" placeholder="Search...">
+    <button onclick="connect()" class="search-button">search</button>
+  </div>
+
+  <!-- search- result area -->
+  <div id="displayArea"></div>
+
+
+
+
+  <footer>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">Advertising</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Legal</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="links">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="f2.js"></script>
+</body>
+
+</html>
